@@ -1,0 +1,44 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      lang="em">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scle=1.0">
+<title>User Registration</title>
+
+
+</head>
+<body>
+	
+	<div class="main_div">
+		<div class="inner_div">
+		
+			 <h3 class="h2_style">Registration Form</h3>
+             <hr>
+            	
+            	<div style="margin-top: 40px;">
+            		<form action="#" th:action="@{/save}" th:object="${user}" name="myform" method="post">
+						<legend for="fn">Full Name:</legend>
+						<input type="hidden" field="*{id}" />
+						<input type="text" field="*{name}" placeholder="Enter full name" name="name" id="fn"required><b><span class="formerror"></span></b>
+
+						<legend>Please Enter Your Email ID</legend>
+						<input type="text" field="*{email}" name="email" maxlength="30" placeholder="Enter Email">
+         
+						<legend>Please Enter Your Contact</legend>
+						<input type="text" field="*{contact}" placeholder="Enter Contact" name="contact" maxlength="12">
+
+						<button class='registration' type="submit"> Register</button>
+					</form>
+				</div>
+		
+		
+		</div>
+	</div>
+
+	
+
+</body>
+</html>

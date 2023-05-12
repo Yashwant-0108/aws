@@ -1,0 +1,43 @@
+@charset "ISO-8859-1";
+
+.main_div
+{
+    display: flex;
+    
+    background-color: rgb(243, 235, 235);
+    height: 100vh;
+    
+}
+
+.h2_style
+{
+    color: black;
+    text-align: center;
+    margin: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 7px;
+    
+}
+
+.inner_div
+{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 10px;
+    box-shadow: 10px 10px 10px gray;
+    height: 30vh;
+    width: 40%;
+    margin-top: 100px;
+    margin-left: 30%;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+a
+{
+    text-decoration: none;
+}
